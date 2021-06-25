@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Weather from './Components/Weather';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <i class="fas fa-street-view"></i> */}
+      <Weather/>
     </div>
   );
 }
 
 export default App;
+
+
+
+//api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}6fd960ad83de6950204aad83069a028f
+
+// // https://cdnjs.com/libraries/font-awesome/5.10.0
+// https://fontawesome.com/
