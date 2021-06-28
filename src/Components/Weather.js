@@ -43,7 +43,7 @@ function Weather() {
           `https://api.opencagedata.com/geocode/v1/json?q=${lati}+${long}&key=dbeb647c77c841ffad7569173af13063`
         )
         .then((res) => {
-          console.log(res.data.results[0]);
+          //console.log(res.data.results[0]);
           setCode(res.data.results[0].components.postcode);
          // console.log(res.data.results[0].components.country_code);
           setCcode(res.data.results[0].components.country_code);
@@ -58,7 +58,7 @@ function Weather() {
           `https://api.openweathermap.org/data/2.5/weather?zip=${code},${Ccode}&units=metric&appid=6fd960ad83de6950204aad83069a028f`
         )
         .then((res) => {
-          console.log(res.data.name);
+          //console.log(res.data.name);
           setlocation(res.data.name)
           setTemp(res.data.main.temp);
           setMax(res.data.main.temp_max);
